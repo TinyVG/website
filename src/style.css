@@ -128,3 +128,7 @@ table.benchmark td {
   margin-right: auto;
   max-width: 100%;
 }
+
+.body p.polyfill {
+  text-align: center;
+}

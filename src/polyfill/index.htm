@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TinyVG</title>
+    <link rel="stylesheet" href="../style.css">
+    <title>TinyVG Polyfill Demo</title>
+    <script type="module">
+      import * as tinyvg from "./tinyvg.js";
+      tinyvg.load("tinyvg.wasm")
+    </script>
+  </head>
+  <body>
+    <div class="body">
+      <a href="../index.htm" style="float: right">[Back to main]</a>
+      <h1>Polyfill Demo</h1>
+
+      <p>
+        The following images are displayed via the polyfill.
+        It parses TinyVG files and outputs a data url that encodes a
+        equivalent SVG file, utilizing the browser to render the data.
+      </p>
+
+      <p class="polyfill">
+        <img style="width: 1em" tvg-src="../img/shield.tvg" />
+        <img style="width: 2em" tvg-src="../img/shield.tvg" />
+        <img style="width: 3em" tvg-src="../img/shield.tvg" />
+        <img style="width: 4em" tvg-src="../img/shield.tvg" />
+        <img style="width: 5em" tvg-src="../img/shield.tvg" />
+        <img style="width: 6em" tvg-src="../img/shield.tvg" />
+      </p>
+
+      <p class="polyfill">
+        <img style="width: 1em" tvg-src="../img/app-icon.tvg" />
+        <img style="width: 2em" tvg-src="../img/app-icon.tvg" />
+        <img style="width: 3em" tvg-src="../img/app-icon.tvg" />
+        <img style="width: 4em" tvg-src="../img/app-icon.tvg" />
+        <img style="width: 5em" tvg-src="../img/app-icon.tvg" />
+        <img style="width: 6em" tvg-src="../img/app-icon.tvg" />
+      </p>
+
+      <p class="polyfill">
+        <img style="width: 20em" tvg-src="../img/chart.tvg" />
+      </p>
+    </div>
+    <div class="page-end-spacer"></div>
+  <body>
+</html>
